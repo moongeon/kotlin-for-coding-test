@@ -1,1 +1,1 @@
-# kotlin-for-coding-test
+# 코틀린을 활용한 코딩문제 가이드
