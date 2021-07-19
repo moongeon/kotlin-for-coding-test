@@ -10,9 +10,14 @@ fun main() {
     var b = readLine()!!.split(" ").map { it.toInt()}.sortedDescending().toMutableList()
 
     for(i in 0 until k){
-        var temp = a[i]
-        a[i] = b[i]
-        b[i] = temp
+        if(a[i] < b[i]) {  
+            var temp = a[i]
+            a[i] = b[i]
+            b[i] = temp
+        }
+        else{
+            break
+        }
     }
 
     println(a.sum())
